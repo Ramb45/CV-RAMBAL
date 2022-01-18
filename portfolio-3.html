@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Document sans nom</title>
+<style type="text/css">
+#contenu{
+	width:164px;
+	position:relative;
+}
+
+#contenu a img{
+	border:0;
+	position:absolute;
+	-moz-transition-property:-moz-transform;
+	-moz-transition-duration:2s;
+	-webkit-transform: scale(.25, .25);
+	-webkit-transition-property:-webkit-transform, z-index, translate;
+	-webkit-transition-duration: 2s;
+	-webkit-transition-timing-function:ease;
+
+}
+
+#contenu a:hover img{z-index:100;}
+
+#contenu #lien1:hover img{
+	-webkit-transform:scale(1.5, 1.5) translate(62.5px, 50px);
+}
+
+#contenu #lien2:hover img{
+	-webkit-transform:scale(1.5, 1.5) translate(-62.5px, 50px);
+}
+
+#contenu #lien3:hover img{
+	-webkit-transform:scale(1.5, 1.5) translate(62.5px, -50px);
+}
+
+#contenu #lien4:hover img{
+	-webkit-transform:scale(1.5, 1.5) translate(-62.5px, -50px);
+}
+
+#lien1 img{
+	z-index:2;
+	top:0px;
+	left:0px;
+}
+#lien2 img{
+	z-index:3;
+	top:0px;
+	left:125px;
+}
+#lien3 img{
+	z-index:4;
+	top:100px;
+	left:0px;
+}
+#lien4 img{
+	z-index:5;
+	top:100px;
+	left:125px;
+}
+
+
+
+</style>
+</head>
+
+<body>
+<div id="contenu">
+
+<a href="#1" id="lien1"><img src="images-port/img1.jpg" width="400" height="300" /></a>
+    
+  <a href="#2" id="lien2"><img src="images-port/img2.jpg" width="400" height="300" /></a>
+  
+  <a href="#3" id="lien3"><img src="images-port/img3.jpg" width="400" height="300" /></a>
+  
+  <a href="#4" id="lien4"><img src="images-port/img4.jpg" /></a>
+ 
+
+</div>
+
+</body>
+</html>
